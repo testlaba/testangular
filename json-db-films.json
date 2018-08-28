@@ -1,0 +1,214 @@
+{
+  "films": [
+    {
+      "id": "1",
+      "Title": "Blackhat",
+      "Year": "2015",
+      "Rated": "R",
+      "Released": "16 Jan 2015",
+      "Runtime": "133 min",
+      "Genre": "Action, Crime, Thriller",
+      "Director": "Michael Mann",
+      "Writer": "Morgan Davis Foehl",
+      "Actors": "Chris Hemsworth, Leehom Wang, Wei Tang, Viola Davis",
+      "Plot": "Nick Hathaway, an extremely talented hacker who has gone astray, finds his way out of a 15 year prison sentence when parts of a computer code he once wrote during his youth appears in a malware that triggered a terrorist attack in a nuclear power plant in China. This opportunity will reunite him with an old friend but will also put him in the middle of a power game between the American and Chinese government as well as an arch villain hacker whose identity he has to find if he wants to keep his freedom and his life.",
+      "Language": "English, Mandarin, Spanish",
+      "Country": "USA",
+      "Awards": "5 nominations.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTg1NDUyMzk5NV5BMl5BanBnXkFtZTgwOTk1NzUxMzE@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "5.4/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "33%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "51/100"
+        }
+      ],
+      "Metascore": "51",
+      "Type": "movie",
+      "DVD": "12 May 2015",
+      "BoxOffice": "£5,686,515",
+      "Production": "Universal Studios",
+      "Website": "http://www.blackhatthemovie.com/",
+      "Response": "True"
+    },
+    {
+      "id": "2",
+      "Title": "Blackhats",
+      "Year": "2015",
+      "Rated": "N/A",
+      "Released": "23 Oct 2015",
+      "Runtime": "104 min",
+      "Genre": "Action, Drama, Thriller",
+      "Director": "Laron Austin",
+      "Writer": "Martin L. Kelley, Eddie Davis Singleton",
+      "Actors": "Errol Sadler, Doris Morgado, Ted Huckabee, Cheri Christian",
+      "Plot": "A reformed, hot-tempered bounty hunter, finds his new harmonious life as a Fugitive Recovery Agent threatened. He must track down a group of cyber hackers before they are assassinated by a rival bounty hunter while also trying to prevent a massive viral attack, which could collapse America's economic foundation.",
+      "Language": "English",
+      "Country": "USA",
+      "Awards": "1 win & 1 nomination.",
+      "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM3MDkxMTg5OF5BMl5BanBnXkFtZTgwOTEzNzI5MzE@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.7/10"
+        }
+      ],
+      "Metascore": "N/A",
+      "Type": "movie",
+      "DVD": "N/A",
+      "BoxOffice": "N/A",
+      "Production": "Cook Box Productions",
+      "Website": "http://blackhatsmovie.blogspot.com/",
+      "Response": "True"
+    },
+    {
+      "id": "3",
+      "Title": "Blade",
+      "Year": "1998",
+      "Rated": "R",
+      "Released": "21 Aug 1998",
+      "Runtime": "120 min",
+      "Genre": "Action, Horror",
+      "Director": "Stephen Norrington",
+      "Writer": "David S. Goyer",
+      "Actors": "Wesley Snipes, Stephen Dorff, Kris Kristofferson, N'Bushe Wright",
+      "Plot": "In a world where vampires walk the earth, Blade has a goal. His goal is to rid the world of all vampire evil. When Blade witnesses a vampire bite Dr. Karen Jenson, he fights away the beast and takes Jenson back to his hideout. Here, alongside Abraham Whistler, Blade attempts to help heal Jenson. The vampire Quinn who was attacked by Blade, reports back to his master Deacon Frost, who is planning a huge surprise for the human population.",
+      "Language": "English, Russian, Serbian",
+      "Country": "USA",
+      "Awards": "4 wins & 8 nominations.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ4MzkzNjcxNV5BMl5BanBnXkFtZTcwNzk4NTU0Mg@@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.1/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "54%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "45/100"
+        }
+      ],
+      "Metascore": "45",
+      "Type": "movie",
+      "DVD": "22 Dec 1998",
+      "BoxOffice": "N/A",
+      "Production": "New Line Cinema",
+      "Website": "N/A",
+      "Response": "True"
+    },
+    {
+      "id": "4",
+      "Title": "Blade Runner",
+      "Year": "1982",
+      "Rated": "R",
+      "Released": "25 Jun 1982",
+      "Runtime": "117 min",
+      "Genre": "Sci-Fi, Thriller",
+      "Director": "Ridley Scott",
+      "Writer": "Hampton Fancher (screenplay), David Webb Peoples (screenplay), Philip K. Dick (novel)",
+      "Actors": "Harrison Ford, Rutger Hauer, Sean Young, Edward James Olmos",
+      "Plot": "In the futuristic year of 2019, Los Angeles has become a dark and depressing metropolis, filled with urban decay. Rick Deckard, an ex-cop, is a \"Blade Runner\". Blade runners are people assigned to assassinate \"replicants\". The replicants are androids that look like real human beings. When four replicants commit a bloody mutiny on the Off World colony, Deckard is called out of retirement to track down the androids. As he tracks the replicants, eliminating them one by one, he soon comes across another replicant, Rachel, who evokes human emotion, despite the fact that she's a replicant herself. As Deckard closes in on the leader of the replicant group, his true hatred toward artificial intelligence makes him question his own identity in this future world, including what's human and what's not human.",
+      "Language": "English, German, Cantonese, Japanese, Hungarian, Arabic",
+      "Country": "USA, Hong Kong",
+      "Awards": "Nominated for 2 Oscars. Another 11 wins & 16 nominations.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzQzMzJhZTEtOWM4NS00MTdhLTg0YjgtMjM4MDRkZjUwZDBlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.2/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "90%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "89/100"
+        }
+      ],
+      "Metascore": "89",
+      "Type": "movie",
+      "DVD": "27 Aug 1997",
+      "BoxOffice": "N/A",
+      "Production": "Warner Bros. Pictures",
+      "Website": "N/A",
+      "Response": "True"
+    },
+    {
+      "id": "5",
+      "Title": "Blade: Trinity",
+      "Year": "2004",
+      "Rated": "R",
+      "Released": "08 Dec 2004",
+      "Runtime": "113 min",
+      "Genre": "Action, Adventure, Horror",
+      "Director": "David S. Goyer",
+      "Writer": "David S. Goyer, Marv Wolfman (character), Gene Colan (character)",
+      "Actors": "Wesley Snipes, Kris Kristofferson, Dominic Purcell, Jessica Biel",
+      "Plot": "Blade finds himself alone surrounded by enemies, fighting an up hill battle with the vampire nation and now humans. He joins forces with a group of vampire hunters whom call themselves the Nightstalkers. The vampire nation awakens the king of vampires Dracula from his slumber with intentions of using his primitive blood to become day-walkers. On the other side is Blade and his team manifesting a virus that could wipe out the vampire race once and for all. In the end the two sides will collide and only one will come out victorious, a battle between the ultimate vampire whom never knew defeat, facing off against the greatest vampire slayer.",
+      "Language": "English, Esperanto",
+      "Country": "USA",
+      "Awards": "1 nomination.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjE0Nzg2MzI3MF5BMl5BanBnXkFtZTYwMjExODQ3._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "5.9/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "25%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "38/100"
+        }
+      ],
+      "Metascore": "38",
+      "Type": "movie",
+      "DVD": "26 Apr 2005",
+      "BoxOffice": "$52,400,000",
+      "Production": "New Line Cinema",
+      "Website": "http://bladetrinity.com/",
+      "Response": "True"
+    },
+
+    {
+      "id": "6",
+      "Title": "Trinity",
+      "Year": "2009–",
+      "Rated": "N/A",
+      "Released": "20 Sep 2009",
+      "Runtime": "60 min",
+      "Genre": "N/A",
+      "Director": "N/A",
+      "Writer": "Robin French, Kieron Quirke",
+      "Actors": "Charles Dance, Claire Skinner, Antonia Bernath, Isabella Calthorpe",
+      "Plot": "A new academic year begins at the ancient and prestigious Trinity College, and among the new students is Charlotte. Convinced that her father's death is in some way linked to the college, Charlotte enrolls determined to uncover the truth.",
+      "Language": "English",
+      "Country": "UK",
+      "Awards": "N/A",
+      "Poster": "http://ia.media-imdb.com/images/M/MV5BNzQwMTc2OTAxNF5BMl5BanBnXkFtZTgwNTY0MjcwMzE@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.9/10"
+        }
+      ],
+      "Metascore": "N/A",
+      "Type": "series",
+      "totalSeasons": "1",
+      "Response": "True"
+    }
+  ]
+}
