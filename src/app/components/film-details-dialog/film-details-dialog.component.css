@@ -1,14 +1,18 @@
 .mat-dialog-title {
   margin: 0 0 5px;
+  padding-left: 10px;
   color: #ffffff;
   background-color: #7f91f5;
 }
 
 ::ng-deep .mat-grid-tile .mat-figure {
+  /*justify-content: left;*/
+}
+
+.dialog-film-details {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  /*justify-content: left;*/
 }
 
 .film-descr {
