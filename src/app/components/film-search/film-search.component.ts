@@ -41,7 +41,7 @@ export class FilmSearchComponent implements OnInit {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.autoFocus = true;
     dialogConfig.width = '800px';
-    dialogConfig.height = '600px';
+    // dialogConfig.height = '600px';
     dialogConfig.data = {
       film: film
     };

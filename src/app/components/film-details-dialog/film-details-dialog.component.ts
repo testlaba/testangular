@@ -18,4 +18,8 @@ export class FilmDetailsDialogComponent implements OnInit {
   ngOnInit() {
   }
 
+  close() {
+    this.dialogRef.close();
+  }
+
 }

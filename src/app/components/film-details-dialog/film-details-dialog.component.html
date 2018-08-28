@@ -1,6 +1,6 @@
 <h2 mat-dialog-title>{{film.Title}}</h2>
 
-<mat-grid-list cols="2">
+<mat-grid-list cols="2" rowHeight="1:1.4">
   <mat-grid-tile>
     <img src="{{film.Poster}}">
   </mat-grid-tile>
@@ -13,3 +13,7 @@
     <div class="film-descr"><b>Plot:</b> {{film.Plot}}</div>
   </mat-grid-tile>
 </mat-grid-list>
+
+<mat-dialog-actions>
+  <button mat-stroked-button (click)="close()">Close</button>
+</mat-dialog-actions>
