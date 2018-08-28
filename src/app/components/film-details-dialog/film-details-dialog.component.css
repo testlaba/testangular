@@ -1,0 +1,16 @@
+.mat-dialog-title {
+  margin: 0 0 5px;
+  color: #ffffff;
+  background-color: #7f91f5;
+}
+
+::ng-deep .mat-grid-tile .mat-figure {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  /*justify-content: left;*/
+}
+
+.film-descr {
+  margin-bottom: 10px;
+}
