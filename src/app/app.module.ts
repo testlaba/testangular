@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {JsonFilmsDbService} from './services/json-films-db.service';
 import {
+  MatAutocompleteModule,
   MatButtonModule,
   MatCardModule,
   MatDialogModule,
@@ -46,6 +47,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    MatAutocompleteModule,
     MatIconModule,
     MatDialogModule,
     MatFormFieldModule,

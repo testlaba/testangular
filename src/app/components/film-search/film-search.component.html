@@ -2,11 +2,28 @@
   <div class="content-block">
 
     <mat-dialog-content [formGroup]="searchForm">
+
       <mat-form-field style="width: 300px">
+
+        <input matInput
+               placeholder="Film Title"
+               formControlName="title"
+               [matAutocomplete]="autocompl">
+        <mat-autocomplete #autocompl="matAutocomplete">
+          <mat-option *ngFor="let film of autocomplFilteredFilms | async" [value]="film.Title">
+            {{film.Title}}
+          </mat-option>
+        </mat-autocomplete>
+
+
+<!--
         <input matInput
                placeholder="Film Title"
                formControlName="title">
+-->
+
       </mat-form-field>
+
     </mat-dialog-content>
 
     <button mat-stroked-button (click)="search()" style="margin: 0 10px">Search</button>

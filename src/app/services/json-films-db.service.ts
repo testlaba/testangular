@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpResponse} from '@angular/common/http';
 import {environment} from '../../environments/environment';
-import {throwError} from 'rxjs';
+import {Observable, throwError} from 'rxjs';
 import {catchError, map} from 'rxjs/operators';
 
 const API_URL = environment.apiUrl;
@@ -13,7 +13,7 @@ export class JsonFilmsDbService {
 
   constructor(private http: HttpClient) { }
 
-  public searchFilmsByTitle(titleStr: string) {
+  public searchFilmsByTitle(titleStr: string): Observable<any> {
     return this.http
       .get(API_URL + '/films?Title_like=' + titleStr)
       .pipe(

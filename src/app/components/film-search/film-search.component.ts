@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup} from '@angular/forms';
+import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
 import {JsonFilmsDbService} from '../../services/json-films-db.service';
 import {MatDialog, MatDialogConfig} from '@angular/material';
 import {FilmDetailsDialogComponent} from '../film-details-dialog/film-details-dialog.component';
+import {Observable, pipe} from 'rxjs';
+import {debounceTime, map, startWith, switchMap} from 'rxjs/operators';
 
 @Component({
   selector: 'app-film-search',
@@ -12,7 +14,9 @@ import {FilmDetailsDialogComponent} from '../film-details-dialog/film-details-di
 export class FilmSearchComponent implements OnInit {
 
   searchForm: FormGroup;
-  films;
+  title = new FormControl();
+  films: any;
+  autocomplFilteredFilms: Observable<any>;
 
   constructor(private fb: FormBuilder,
               private apiFilmDbService: JsonFilmsDbService,
@@ -23,6 +27,23 @@ export class FilmSearchComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.autocomplFilteredFilms = this.searchForm.get('title').valueChanges // this.title.valueChanges
+      .pipe(
+        debounceTime(400),  // angular - RXJS 5.5+
+        startWith(''),
+        switchMap(value => {
+          const filterValue = value.toLowerCase();
+          if (filterValue) {
+            return this.apiFilmDbService.searchFilmsByTitle(filterValue).pipe(
+              map(response => {
+                return response;
+              })
+            );
+          } else {
+            return [];
+          }
+        })
+      );
   }
 
   search() {
@@ -30,10 +51,11 @@ export class FilmSearchComponent implements OnInit {
     this.apiFilmDbService.searchFilmsByTitle(titleStr).subscribe((films) => {
       if ( films != null) {
         this.films = films;
-        console.log(films);
+        // console.log(films);
       }
     });
   }
+
 
   details(film: any) {
     const zzz = film;
