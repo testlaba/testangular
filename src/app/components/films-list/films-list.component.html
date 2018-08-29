@@ -1,5 +1,21 @@
 <div class="page-container">
-  <p>
-    films-list works!
-  </p>
+  <div class="content-block film-cards-container">
+
+    <mat-card *ngFor="let film of films" class="film-card" (click)="details(film)">
+      <mat-card-header>
+        <div style="padding-bottom: 10px">
+          <b>{{film.Title}}</b>
+        </div>
+      </mat-card-header>
+
+      <mat-card-content>
+        <img src="{{film.Poster}}">
+      </mat-card-content>
+
+      <mat-card-footer>
+        <div style="padding-top: 10px">{{film.Year}}, {{film.Runtime}}</div>
+      </mat-card-footer>
+    </mat-card>
+
+  </div>
 </div>

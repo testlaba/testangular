@@ -7,6 +7,13 @@
 
   <mat-grid-tile>
     <div class="dialog-film-details">
+      <div class="film-descr">
+        <mat-checkbox
+          [(ngModel)]="film.isFavorite"
+          (click)="onFavorite($event)">
+          <b>Favorite</b>
+        </mat-checkbox>
+      </div>
       <div class="film-descr"><b>Title:</b> {{film.Title}}</div>
       <div class="film-descr"><b>Year:</b> {{film.Year}}</div>
       <div class="film-descr"><b>Runtime:</b> {{film.Runtime}}</div>

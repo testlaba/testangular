@@ -5,7 +5,7 @@ import {JsonFilmsDbService} from './services/json-films-db.service';
 import {
   MatAutocompleteModule,
   MatButtonModule,
-  MatCardModule,
+  MatCardModule, MatCheckboxModule,
   MatDialogModule,
   MatFormFieldModule,
   MatGridListModule,
@@ -22,6 +22,7 @@ import { FilmsListComponent } from './components/films-list/films-list.component
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { FilmDetailsDialogComponent } from './components/film-details-dialog/film-details-dialog.component';
+import {StorageServiceModule} from 'angular-webstorage-service';
 
 
 const appRoutes: Routes = [
@@ -47,11 +48,13 @@ const appRoutes: Routes = [
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    StorageServiceModule,
     MatAutocompleteModule,
     MatIconModule,
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
+    MatCheckboxModule,
     MatButtonModule,
     MatCardModule,
     MatDialogModule,

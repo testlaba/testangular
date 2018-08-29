@@ -1,10 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, Input, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
 import {JsonFilmsDbService} from '../../services/json-films-db.service';
 import {MatDialog, MatDialogConfig} from '@angular/material';
 import {FilmDetailsDialogComponent} from '../film-details-dialog/film-details-dialog.component';
 import {Observable, pipe} from 'rxjs';
 import {debounceTime, map, startWith, switchMap} from 'rxjs/operators';
+import {SESSION_STORAGE, WebStorageService} from 'angular-webstorage-service';
+import {StorageServiceService} from '../../services/storage-service.service';
 
 @Component({
   selector: 'app-film-search',
@@ -13,6 +15,8 @@ import {debounceTime, map, startWith, switchMap} from 'rxjs/operators';
 })
 export class FilmSearchComponent implements OnInit {
 
+  private favoriteFilmsStorage: WebStorageService;
+
   searchForm: FormGroup;
   title = new FormControl();
   films: any;
@@ -20,14 +24,16 @@ export class FilmSearchComponent implements OnInit {
 
   constructor(private fb: FormBuilder,
               private apiFilmDbService: JsonFilmsDbService,
-              private dialog: MatDialog) {
+              private dialog: MatDialog,
+              private storageService: StorageServiceService) {
     this.searchForm = fb.group({
       title: ''
     });
+    this.favoriteFilmsStorage = storageService.storage;
   }
 
   ngOnInit() {
-    this.autocomplFilteredFilms = this.searchForm.get('title').valueChanges // this.title.valueChanges
+    this.autocomplFilteredFilms = this.searchForm.get('title').valueChanges
       .pipe(
         debounceTime(400),  // angular - RXJS 5.5+
         startWith(''),
@@ -48,24 +54,30 @@ export class FilmSearchComponent implements OnInit {
 
   search() {
     const titleStr = this.searchForm.value.title;
-    this.apiFilmDbService.searchFilmsByTitle(titleStr).subscribe((films) => {
-      if ( films != null) {
-        this.films = films;
-        // console.log(films);
-      }
-    });
+    if ( titleStr ) {
+      this.apiFilmDbService.searchFilmsByTitle(titleStr).subscribe((films) => {
+        if (films != null) {
+          const storage = this.favoriteFilmsStorage;
+          films.forEach(function (film) {
+            if ( storage.get(film.id) ) {
+              film.isFavorite = true;
+            }
+          });
+          this.films = films;
+          // console.log(films);
+        }
+      });
+    }
   }
 
 
   details(film: any) {
-    const zzz = film;
-
     const dialogConfig = new MatDialogConfig();
     dialogConfig.autoFocus = true;
     dialogConfig.width = '800px';
-    // dialogConfig.height = '600px';
     dialogConfig.data = {
-      film: film
+      film: film,
+      favoriteFilmsStorage: this.favoriteFilmsStorage
     };
 
     const dialogRef = this.dialog.open(FilmDetailsDialogComponent, dialogConfig);
